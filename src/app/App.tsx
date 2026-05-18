@@ -49,7 +49,7 @@ export default function App() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-amber-200/50 shadow-sm">
+      <nav className="w-full z-50 bg-white/80 backdrop-blur-xl border-b border-amber-200/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <motion.a
             href="https://www.lancerpierre.com"
@@ -73,7 +73,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-24 px-6 overflow-hidden z-10">
+      <section className="relative pt-16 pb-24 px-6 overflow-hidden z-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -119,6 +119,9 @@ export default function App() {
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </motion.a>
               </div>
+              <p className="text-sm text-neutral-600 mt-4">
+                Investment: <span className="font-semibold text-amber-700">$11</span> <span className="text-neutral-500">· Pay what feels right to support the mission</span>
+              </p>
             </motion.div>
 
             <motion.div
@@ -499,7 +502,10 @@ export default function App() {
               Get The Book Now
               <ArrowRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
             </motion.a>
-            <p className="text-amber-100 mt-8 text-lg">
+            <p className="text-amber-100 mt-6 text-lg font-semibold">
+              $11 · Pay more to support the work
+            </p>
+            <p className="text-amber-100/80 mt-2 text-base">
               Join thousands producing a life they actually own
             </p>
           </motion.div>
